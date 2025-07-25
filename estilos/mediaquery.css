@@ -24,6 +24,29 @@
     font-size: 2em;
   }
 
+  i#burguer {
+    display: none;
+  }
+
+  menu {
+    display: block;
+    text-align: center;
+  }
+
+  menu > ul > li {
+    display: inline-block;
+  }
+
+  menu > ul > li > a {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  menu > ul > li > a:hover {
+    background-color: transparent;
+    color: var(--txtpadrao);
+  }
+
   #home {
     padding: 0px 40px;
   }
@@ -80,6 +103,29 @@
     background-image: url(../assets/Dark-desktop.png);
   }
 
+  i#burguer {
+    display: none;
+  }
+
+  menu {
+    display: block;
+    text-align: center;
+  }
+
+  menu > ul > li {
+    display: inline-block;
+  }
+
+  menu > ul > li > a {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  menu > ul > li > a:hover {
+    background-color: transparent;
+    color: var(--txtpadrao);
+  }
+
 
   img#celular {display: none;}
   img#tablet {display: none;}
@@ -90,6 +136,30 @@
   /*TELAS GRANDES*/
   body {
     background-image: url(../assets/Dark-desktop.png);
+    padding: 30px 30px 30px 30px;
+  }
+
+  i#burguer {
+    display: none;
+  }
+
+  menu {
+    display: block;
+    text-align: center;
+  }
+
+  menu > ul > li {
+    display: inline-block;
+  }
+
+  menu > ul > li > a {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  menu > ul > li > a:hover {
+    background-color: transparent;
+    color: var(--txtpadrao);
   }
 
   img#celular {display: none;}

@@ -12,40 +12,61 @@
     <link rel="stylesheet" href="estilos/mediaquery.css" />
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <!-- HEADER -->
     <header>
-      <i id="burguer" class="ph ph-list" onclick="clickMenu()"></i>
-      <menu id="paginas">
-        <div class="input">
-          <button class="value">Home</button>
-          <button class="value">Sobre mim</button>
-          <button class="value">Projetos</button>
-          <button class="value">Habilidades</button>
-          <button class="value">Contato</button>
-        </div>
-      </menu>
-      <h1>duarte.dev</h1>
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider"></span>
-      </label>
+      <div class="left">
+        <h1>duarte.dev</h1>
+      </div>
+
+      <div class="center">
+        <i id="burguer" class="ph ph-list" onclick="clickMenu()"></i>
+      </div>
+
+      <div class="right">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
     </header>
 
+    <menu id="itens">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre mim</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </menu>
+    <!-- HOME -->
+
     <main>
-      <!-- HOME -->
       <section id="home">
         <h1>HELLO WORLD👋🏼</h1>
         <h2>Sou o Felipe,</h2>
         <h3>desenvolvedor web front-end.</h3>
         <div id="botoes">
-          <button id="fale"><p>Fale comigo</p></button> 
+          <button id="fale"><p>Fale comigo</p></button>
           <button id="baixe"><p>Baixe o CV</p></button>
         </div>
         <div class="foto">
-          <img id="celular" src="assets/foto-p.png" alt="Foto do Felipe Duarte" />
-          <img id="tablet"src="assets/foto-m.png" alt="Foto do Felipe Duarte">
-          <img id="desktop" src="assets/foto-g.png" alt="Foto do Felipe Duarte">
+          <img
+            id="celular"
+            src="assets/foto-p.png"
+            alt="Foto do Felipe Duarte"
+          />
+          <img
+            id="tablet"
+            src="assets/foto-m.png"
+            alt="Foto do Felipe Duarte"
+          />
+          <img
+            id="desktop"
+            src="assets/foto-g.png"
+            alt="Foto do Felipe Duarte"
+          />
         </div>
       </section>
 
