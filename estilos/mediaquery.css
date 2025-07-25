@@ -10,20 +10,101 @@
 
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
-    body {
-        background-image: url(../assets/Dark-tablet.png);
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /*TABLET*/
+  body {
+    background-image: url(../assets/Dark-tablet.png);
+  }
+
+  .input {
+    width: 50vw;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  #home {
+    padding: 0px 40px;
+  }
+
+  #home > h1 {
+    font-size: 30px;
+    margin-top: 177px;
+  }
+
+  #home > h2 {
+    font-size: 80px;
+  }
+
+  #home > h3 {
+    font-size: 28px;
+  }
+
+  div#botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  div > button {
+    width: 200px;
+    height: 90px;
+  }
+
+  div #fale {
+    margin: 30px 24px 30px;
+  }
+
+  #botoes p {
+    font-size: 1.5em;
+  }
+
+  div #baixe {
+    margin: 30px 24px 30px;
+  }
+
+  .foto img {
+    margin-bottom: 110px;
+  }
+
+  img#celular { display: none; }
+  img#tablet { display: block; }
+  img#desktop { display: none; }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
-    body {
-        background-image: url(../assets/Dark-desktop.png);
-    }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /*DESKTOP*/
+  body {
+    background-image: url(../assets/Dark-desktop.png);
+  }
+
+
+  img#celular {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#desktop {
+    display: block;
+  }
 }
 
-@media screen and (min-width: 1200px) { /*TELAS GRANDES*/
-    body {
-        background-image: url(../assets/Dark-desktop.png);
-    }
+@media screen and (min-width: 1200px) {
+  /*TELAS GRANDES*/
+  body {
+    background-image: url(../assets/Dark-desktop.png);
+  }
+
+  img#celular {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#desktop {
+    display: block;
+  }
 }
