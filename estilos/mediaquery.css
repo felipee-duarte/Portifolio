@@ -10,6 +10,14 @@
 
 */
 
+:root{
+  --txtpadrao: #ffffff;
+  --txtdestaque: #b0b3d6;
+  --escuro: #190447;
+  --claro: #16aeea;
+  --luaesol: #fff000;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /*TABLET*/
   body {
@@ -40,6 +48,7 @@
   menu > ul > li > a {
     background-color: transparent;
     box-shadow: none;
+    font-size: 1.3em;
   }
 
   menu > ul > li > a:hover {
@@ -51,16 +60,16 @@
     padding: 0px 40px;
   }
 
-  #home > h1 {
+  #texto > h1 {
     font-size: 30px;
-    margin-top: 177px;
+    margin-top: 100px;
   }
 
-  #home > h2 {
+  #texto > h2 {
     font-size: 80px;
   }
 
-  #home > h3 {
+  #texto > h3 {
     font-size: 28px;
   }
 
@@ -74,15 +83,17 @@
   div > button {
     width: 200px;
     height: 90px;
+  } 
+
+  div > button > p{
+    font-size: 1.5em;
   }
 
   div #fale {
     margin: 30px 24px 30px;
   }
 
-  #botoes p {
-    font-size: 1.5em;
-  }
+ 
 
   div #baixe {
     margin: 30px 24px 30px;
@@ -92,9 +103,9 @@
     margin-bottom: 110px;
   }
 
-  img#celular { display: none; }
-  img#tablet { display: block; }
-  img#desktop { display: none; }
+  img#celular {display: none}
+  img#tablet {display: block}
+  img#desktop {display: none}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -119,6 +130,7 @@
   menu > ul > li > a {
     background-color: transparent;
     box-shadow: none;
+    font-size: 1.5em;
   }
 
   menu > ul > li > a:hover {
@@ -126,10 +138,43 @@
     color: var(--txtpadrao);
   }
 
+  #home {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px;
+  }
 
-  img#celular {display: none;}
-  img#tablet {display: none;}
-  img#desktop {display: block;}
+  #texto h1 {
+    font-size: 2em;
+    margin-top: 100px;
+  }
+
+  #texto h2 {
+    font-size: 5.5em;
+  }
+
+  #texto h3 {
+    font-size: 2em;
+  }
+
+  #texto button {
+    width: 180px;
+    height: 60px;
+  }
+
+  div > button > p{
+    font-size: 1.5em;
+  }
+
+   div.foto{
+    margin-top: 60px;
+  }
+
+
+
+  img#celular {display: none}
+  img#tablet {display: none}
+  img#desktop {display: block}
 }
 
 @media screen and (min-width: 1200px) {
@@ -155,6 +200,7 @@
   menu > ul > li > a {
     background-color: transparent;
     box-shadow: none;
+    font-size: 1.5em;
   }
 
   menu > ul > li > a:hover {
@@ -162,7 +208,45 @@
     color: var(--txtpadrao);
   }
 
-  img#celular {display: none;}
-  img#tablet {display: none;}
-  img#desktop {display: block;}
+  #home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 40px;
+  }
+
+  div#texto {
+    display: inline-block;
+  }
+
+  #texto h1 {
+    font-size: 2em;
+    margin-top: 100px;
+  }
+
+
+  #texto h2 {
+    font-size: 5.5em;
+  }
+
+  #texto h3 {
+    font-size: 2em;
+  }
+
+  #texto button {
+    width: 180px;
+    height: 60px;
+  }
+
+  div > button > p{
+    font-size: 1.5em;
+  }
+
+  div.foto{
+    margin-top: 60px;
+  }
+
+  img#celular {display: none}
+  img#tablet {display: none}
+  img#desktop {display: block}
 }

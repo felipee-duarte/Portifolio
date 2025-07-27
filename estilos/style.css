@@ -39,17 +39,19 @@ header {
 .left,
 .center,
 .right {
-  flex: 1;
   display: flex;
   align-items: center;
 }
 
 .center {
-  justify-content: center; /* Centraliza o ícone */
+  justify-content: center; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right {
   justify-content: flex-end; /* Coloca o switch à direita */
+  margin-left: auto;
 }
 
 header h1 {
@@ -146,7 +148,7 @@ menu > ul > li > a:hover {
 
 
 
-#home > h1 {
+#texto h1 {
   color: var(--txtpadrao);
   font-size: 18px;
   font-weight: bold;
@@ -154,7 +156,7 @@ menu > ul > li > a:hover {
   margin-right: 35px;
 }
 
-#home > h2 {
+#texto h2 {
   color: var(--txtpadrao);
   font-size: 40px;
   font-weight: bold;
@@ -162,7 +164,7 @@ menu > ul > li > a:hover {
   
 }
 
-#home > h3 {
+#texto h3 {
   color: #8e94da;
   font-size: 16px;
   margin-right: 35px;
@@ -182,10 +184,6 @@ div > button {
   height: 54px;
   border-radius: 50px;
   
-}
-
-#botoes p {
-  font-size: 1em;
 }
 
 div #fale {
