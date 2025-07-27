@@ -56,20 +56,20 @@
     color: var(--txtpadrao);
   }
 
-  #home {
+  .home {
     padding: 0px 40px;
   }
 
-  #texto > h1 {
+  #texto h1 {
     font-size: 30px;
     margin-top: 100px;
   }
 
-  #texto > h2 {
+  #texto h2 {
     font-size: 80px;
   }
 
-  #texto > h3 {
+  #texto h3 {
     font-size: 28px;
   }
 
@@ -102,6 +102,24 @@
   .foto img {
     margin-bottom: 110px;
   }
+
+  .sobre h2{
+  font-size: 3.5em;
+  color: var(--txtpadrao);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
+}
+
+.sobre p {
+  font-size: 1.5em;
+  text-indent: 1.5em;
+  color: var(--txtpadrao);
+  text-align: justify;
+  max-width: 700px;
+  margin: auto;
+}
 
   img#celular {display: none}
   img#tablet {display: block}
@@ -138,7 +156,7 @@
     color: var(--txtpadrao);
   }
 
-  #home {
+  .home {
     display: flex;
     flex-direction: row;
     padding: 0px 40px;
@@ -169,6 +187,24 @@
    div.foto{
     margin-top: 60px;
   }
+
+  .sobre h2{
+  font-size: 3em;
+  color: var(--txtpadrao);
+  text-align: center; 
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
+}
+
+.sobre p {
+  font-size: 1.5em;
+  text-indent: 2em;
+  color: var(--txtpadrao);
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+}
 
 
 
@@ -208,7 +244,7 @@
     color: var(--txtpadrao);
   }
 
-  #home {
+  .home {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -245,6 +281,24 @@
   div.foto{
     margin-top: 60px;
   }
+
+  .sobre h2{
+  font-size: 3.5em;
+  color: var(--txtpadrao);
+  text-align: center; 
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
+}
+
+.sobre p {
+  font-size: 1.5em;
+  text-indent: 2em;
+  color: var(--txtpadrao);
+  text-align: justify;
+  max-width: 900px;
+  margin: auto;
+}
 
   img#celular {display: none}
   img#tablet {display: none}

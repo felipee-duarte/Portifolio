@@ -148,7 +148,7 @@ menu > ul > li > a:hover {
 
 
 
-#texto h1 {
+.home h1 {
   color: var(--txtpadrao);
   font-size: 18px;
   font-weight: bold;
@@ -156,7 +156,7 @@ menu > ul > li > a:hover {
   margin-right: 35px;
 }
 
-#texto h2 {
+.home h2 {
   color: var(--txtpadrao);
   font-size: 40px;
   font-weight: bold;
@@ -164,7 +164,7 @@ menu > ul > li > a:hover {
   
 }
 
-#texto h3 {
+.home h3 {
   color: #8e94da;
   font-size: 16px;
   margin-right: 35px;
@@ -230,6 +230,24 @@ img#celular {display: block;}
 img#tablet {display: none;}
 img#desktop{display: none;}
 
+
+.sobre h2{
+  font-size: 2.5em;
+  color: var(--txtpadrao);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
+}
+
+.sobre p {
+  font-size: 1em;
+  text-indent: 1em;
+  color: var(--txtpadrao);
+  text-align: justify;
+  max-width: 500px;
+  margin: auto;
+}
 
 footer {
   text-align: center;
