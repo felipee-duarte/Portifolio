@@ -10,15 +10,13 @@
 
 */
 
-:root{
+:root {
   --txtpadrao: #ffffff;
   --txtdestaque: #b0b3d6;
   --escuro: #190447;
   --claro: #16aeea;
   --luaesol: #fff000;
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /*TABLET*/
@@ -85,17 +83,15 @@
   div > button {
     width: 200px;
     height: 90px;
-  } 
+  }
 
-  div > button > p{
+  div > button > p {
     font-size: 1.5em;
   }
 
   div #fale {
     margin: 30px 24px 30px;
   }
-
- 
 
   div #baixe {
     margin: 30px 24px 30px;
@@ -105,27 +101,41 @@
     margin-bottom: 110px;
   }
 
-  .sobre h2{
-  font-size: 3.5em;
-  color: var(--txtpadrao);
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
-}
+  .sobre h2 {
+    font-size: 3em;
+    color: var(--txtpadrao);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-.sobre p {
-  font-size: 1.5em;
-  text-indent: 1.5em;
-  color: var(--txtpadrao);
-  text-align: justify;
-  max-width: 700px;
-  margin: auto;
-}
+  .sobre p {
+    font-size: 1.5em;
+    text-indent: 1.5em;
+    color: var(--txtpadrao);
+    text-align: justify;
+    max-width: 700px;
+    margin: auto;
+  }
 
-  img#celular {display: none}
-  img#tablet {display: block}
-  img#desktop {display: none}
+  .projetos h2 {
+    font-size: 3em;
+    color: var(--txtpadrao);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  img#celular {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -182,37 +192,51 @@
     height: 60px;
   }
 
-  div > button > p{
+  div > button > p {
     font-size: 1.5em;
   }
 
-   div.foto{
+  div.foto {
     margin-top: 60px;
   }
 
-  .sobre h2{
-  font-size: 3em;
-  color: var(--txtpadrao);
-  text-align: center; 
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
-}
+  .sobre h2 {
+    font-size: 3em;
+    color: var(--txtpadrao);
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-.sobre p {
-  font-size: 1.5em;
-  text-indent: 2em;
-  color: var(--txtpadrao);
-  text-align: justify;
-  max-width: 800px;
-  margin: auto;
-}
+  .sobre p {
+    font-size: 1.5em;
+    text-indent: 2em;
+    color: var(--txtpadrao);
+    text-align: justify;
+    max-width: 800px;
+    margin: auto;
+  }
 
+  .projetos h2 {
+    font-size: 3.5em;
+    color: var(--txtpadrao);
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-
-  img#celular {display: none}
-  img#tablet {display: none}
-  img#desktop {display: block}
+  img#celular {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#desktop {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -262,7 +286,6 @@
     margin-top: 100px;
   }
 
-
   #texto h2 {
     font-size: 5.5em;
   }
@@ -276,33 +299,49 @@
     height: 60px;
   }
 
-  div > button > p{
+  div > button > p {
     font-size: 1.5em;
   }
 
-  div.foto{
+  div.foto {
     margin-top: 60px;
   }
 
-  .sobre h2{
-  font-size: 3.5em;
-  color: var(--txtpadrao);
-  text-align: center; 
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
-}
+  .sobre h2 {
+    font-size: 3.5em;
+    color: var(--txtpadrao);
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-.sobre p {
-  font-size: 1.5em;
-  text-indent: 2em;
-  color: var(--txtpadrao);
-  text-align: justify;
-  max-width: 900px;
-  margin: auto;
-}
+  .sobre p {
+    font-size: 1.5em;
+    text-indent: 2em;
+    color: var(--txtpadrao);
+    text-align: justify;
+    max-width: 900px;
+    margin: auto;
+  }
 
-  img#celular {display: none}
-  img#tablet {display: none}
-  img#desktop {display: block}
+  .projetos h2 {
+    font-size: 3.5em;
+    color: var(--txtpadrao);
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  img#celular {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#desktop {
+    display: block;
+  }
 }
