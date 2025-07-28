@@ -16,6 +16,12 @@
   --escuro: #190447;
   --claro: #16aeea;
   --luaesol: #fff000;
+  --etiqueta: #ffffffe6;
+  --txtetiqueta: #6366f1;
+  --titulocartao: #111111;
+  --bordafooter: #00000030;
+  --swiperbullet: #b1b3f8;
+  --swiperbutton: #6366f1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -119,13 +125,56 @@
     margin: auto;
   }
 
-  .projetos h2 {
+ .txt-projeto h2 {
+    display: flex;
     font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     color: var(--txtpadrao);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
+
+  .txthabili {
+    display: flex;
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: var(--txtpadrao);
+    text-align: center;
+    padding: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #fone {
+    font-size: 30px;
+  }
+
+  .contato h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--txtpadrao);
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contato p {
+  font-size: 1.5em;
+}
+
+  .linha-decorativa {
+    height: 4px;
+  }
+
+  .linha-decorativa::before,
+.linha-decorativa::after {
+  width: 8px;
+  height: 8px;
+}
 
   img#celular {
     display: none;
@@ -218,15 +267,73 @@
     margin: auto;
   }
 
-  .projetos h2 {
-    font-size: 3.5em;
+  .txt-projeto h2 {
+    display: flex;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
     color: var(--txtpadrao);
     text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding: 20px;
+    padding: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
+
+  .txthabili {
+    display: flex;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: var(--txtpadrao);
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .embalagem {
+    margin: 0 60px 35px;
+  }
+
+  .embalagem .swiper-button-prev {
+    display: flex;
+  }
+
+  .embalagem .swiper-button-next {
+    display: flex;
+  }
+
+  .paginas-slide img {
+    width: 150px;
+  }
+
+  #fone {
+    font-size: 30px;
+  }
+
+  .contato h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   font-size: 3.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--txtpadrao);
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contato p {
+  font-size: 1.5em;
+}
+
+  .linha-decorativa {
+    height: 6px;
+  }
+
+  .linha-decorativa::before,
+.linha-decorativa::after {
+  width: 15px;
+  height: 15px;
+}
 
   img#celular {
     display: none;
@@ -325,15 +432,74 @@
     margin: auto;
   }
 
-  .projetos h2 {
-    font-size: 3.5em;
+  .txt-projeto h2 {
+    display: flex;
+    font-size: 3em;
+    margin-top: 3em;
+    margin-bottom: 1em;
     color: var(--txtpadrao);
     text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding: 20px;
+    padding: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
+
+  .txthabili {
+    display: flex;
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--txtpadrao);
+    text-align: center;
+    padding: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .embalagem {
+    margin: 0 60px 35px;
+  }
+
+  .embalagem .swiper-button-prev {
+    display: flex;
+  }
+
+  .embalagem .swiper-button-next {
+    display: flex;
+  }
+
+  .paginas-slide img {
+    width: 150px;
+  }
+
+  #fone {
+    font-size: 30px;
+  }
+
+  .contato h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   font-size: 3.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--txtpadrao);
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contato p {
+  font-size: 1.5em;
+}
+
+  .linha-decorativa {
+    height: 6px;
+  }
+
+  .linha-decorativa::before,
+.linha-decorativa::after {
+  width: 15px;
+  height: 15px;
+}
+
 
   img#celular {
     display: none;

@@ -10,7 +10,10 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="estilos/style.css" media="all" />
     <link rel="stylesheet" href="estilos/mediaquery.css" />
-    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body onresize="mudouTamanho()">
     <!-- HEADER -->
@@ -40,8 +43,8 @@
         <li><a href="#">Contato</a></li>
       </ul>
     </menu>
-    <!-- HOME -->
 
+    <!-- HOME -->
     <main>
       <section class="home">
         <div id="texto">
@@ -77,31 +80,305 @@
           <p>
             Sou um desenvolvedor web front-end focado em criar interfaces
             modernas, acessíveis e bem estruturadas. Tenho conhecimento em
-            <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>, e estou me preparando para avançar com
-            <strong>frameworks</strong> como o <strong>React</strong>. <br>
-            Aprendo rápido, gosto de resolver problemas
-            e estou sempre em busca de melhorar minhas habilidades. No momento,
-            estou em busca da <strong>minha primeira oportunidade profissional</strong>, onde eu
+            <strong>HTML5</strong>, <strong>CSS3</strong> e
+            <strong>JavaScript</strong>, e estou me preparando para avançar com
+            <strong>frameworks</strong> como o <strong>React</strong>. <br />
+            Aprendo rápido, gosto de resolver problemas e estou sempre em busca
+            de melhorar minhas habilidades. No momento, estou em busca da
+            <strong>minha primeira oportunidade profissional</strong>, onde eu
             possa colocar em prática tudo o que venho estudando e continuar
-            evoluindo com projetos reais. <br>
-            Tenho muita vontade de crescer na área
-            e contribuir com soluções criativas e funcionais para a web.
+            evoluindo com projetos reais. <br />
+            Tenho muita vontade de crescer na área e contribuir com soluções
+            criativas e funcionais para a web.
           </p>
         </div>
       </section>
 
       <!-- PROJETOS -->
-      <section>
-        <div class="projetos">
+
+      <section class="projeto">
+        <div class="txt-projeto">
           <h2>Projetos</h2>
+        </div>
+        <div class="container swiper">
+          <div class="embalagem">
+            <div class="lista-cartao swiper-wrapper">
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/Lanader-Selletcion.png"
+                    alt="Imagem projeto lander sellection"
+                  />
+                  <p class="etiqueta-cartao">Lander Sellection</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Site da lander 250 2025</h3>
+                  <p class="texto-cartao">
+                    Uma página para visualizar as cores nova Yamaha Lander 250
+                    2025, nela também inclui o manual interativo da própria.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/Lander-Sellection"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/Bio-links.png"
+                    alt="Imagem projeto Bio link"
+                  />
+                  <p class="etiqueta-cartao">Bio link</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">
+                    Um agregador de links para usar como um cartão de visitas
+                    online.
+                  </h3>
+                  <p class="texto-cartao">
+                    Um agregador de link com modo dark e light, para usar no seu
+                    perfil pessoal e até mesmo no profissional.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/BioLink"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/coração-animado.png"
+                    alt="Imagem projeto animacao de coracao"
+                  />
+                  <p class="etiqueta-cartao">coração animado</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Site com fundo e carta animada</h3>
+                  <p class="texto-cartao">
+                    Um site com o animação de coracao no cursor e com uma carta
+                    funcional.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/animacao-de-coracao"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/clima-tempo.png"
+                    alt="Imagem projeto clima tempo"
+                  />
+                  <p class="etiqueta-cartao">Previsão do tempo</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">
+                    Site para verificar a previsão do tempo
+                  </h3>
+                  <p class="texto-cartao">
+                    Nesse site você consegue verificar a previsão do tempo de
+                    qualquer lugar do mundo, nele inclui informções como °C,
+                    clima, umidade.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/Previsao-Do-Tempo"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/Projeto-login.png"
+                    alt="Imagem projeto lander sellection"
+                  />
+                  <p class="etiqueta-cartao">Formulário login</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Modelo formulário de login</h3>
+                  <p class="texto-cartao">
+                    Um formulário de login 100% responsivo.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/projeto-login"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img src="assets/Portifólio.png" alt="Imagem Portifólio" />
+                  <p class="etiqueta-cartao">Portifólio</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Meu portifólio</h3>
+                  <p class="texto-cartao">
+                    O site que desenvolvi para me apresentar e apresentar meus
+                    projetos.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/Portifolio"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img src="assets/breve.png" alt="Imagem Portifólio" />
+                  <p class="etiqueta-cartao">Em breve...</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">...</h3>
+                  <p class="texto-cartao">
+                    Aprendizado constante! <br />
+                    Em breve muitos outros projetos.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
 
       <!-- HABILIDADES -->
-      <section></section>
+      <section class="habilidade">
+        <h2 class="txthabili">Habilidades e Ferramentas</h2>
+        <div class="container-slide">
+          <div class="paginas-slide">
+            <img src="assets/HTML5.png" alt="logo Html5" />
+            <img src="assets/CSS3.png" alt="logo Css3" />
+            <img src="assets/JS.png" alt="logo JavaScript" />
+            <img src="assets/GIT.png" alt="logo do Git" />
+            <img src="assets/FIGMA.png" alt="logo do Figma" />
+            <img src="assets/HTML5.png" alt="logo Html5" />
+            <img src="assets/CSS3.png" alt="logo Css3" />
+            <img src="assets/JS.png" alt="logo JavaScript" />
+            <img src="assets/GIT.png" alt="logo do Git" />
+            <img src="assets/FIGMA.png" alt="logo do Figma" />
+            <img src="assets/HTML5.png" alt="logo Html5" />
+            <img src="assets/CSS3.png" alt="logo Css3" />
+            <img src="assets/JS.png" alt="logo JavaScript" />
+            <img src="assets/GIT.png" alt="logo do Git" />
+            <img src="assets/FIGMA.png" alt="logo do Figma" />
+            <img src="assets/HTML5.png" alt="logo Html5" />
+            <img src="assets/CSS3.png" alt="logo Css3" />
+            <img src="assets/JS.png" alt="logo JavaScript" />
+            <img src="assets/GIT.png" alt="logo do Git" />
+            <img src="assets/FIGMA.png" alt="logo do Figma" />
+            alt="logo Html5">
+            <img src="assets/CSS3.png" alt="logo Css3" />
+            <img src="assets/JS.png" alt="logo JavaScript" />
+            <img src="assets/GIT.png" alt="logo do Git" />
+            <img src="assets/FIGMA.png" alt="logo do Figma" />
+          </div>
+        </div>
+      </section>
 
       <!-- CONTATO -->
-      <section></section>
+      <section class="contato">
+        <div>
+          <h2>Fale comigo!</h2>
+        </div>
+        <div id="txtcontato">
+          <p>
+            <i id="fone" class="ph ph-envelope"></i>felipeds0211@gmail.com
+            <br> 
+            <i id="fone" class="ph ph-device-mobile"></i>+55 19 99646-2753
+          </p> 
+        </div>
+        <div class="linha-decorativa"></div>
+      </section>
     </main>
 
     <footer>
@@ -132,5 +409,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
