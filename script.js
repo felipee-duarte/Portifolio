@@ -15,6 +15,7 @@ function mudouTamanho() {
     }
 }
 
+
 const swiper = new Swiper('.embalagem', {
   loop: true,
   spaceBetween: 30,
@@ -25,14 +26,12 @@ const swiper = new Swiper('.embalagem', {
     pauseOnMouseEnter: true,
   },
 
-  // Pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

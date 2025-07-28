@@ -66,6 +66,10 @@
     padding: 0px 40px;
   }
 
+  .txt-animado span::after {
+    background-color: #120432;
+  }
+
   #texto h1 {
     font-size: 30px;
     margin-top: 100px;

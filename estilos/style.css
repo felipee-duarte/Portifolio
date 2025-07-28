@@ -157,17 +157,79 @@ menu > ul > li > a:hover {
   margin-right: 35px;
 }
 
-.home h2 {
+.container-h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+div.txt-animado {
   color: var(--txtpadrao);
   font-size: 40px;
   font-weight: bold;
   margin-right: 35px;
 }
 
+.txt-animado span{
+  position: relative;
+}
+
+.txt-animado span::before {
+  content: "Felipe";
+  color: var(--txtdestaque);
+  animation: words 20s infinite;
+}
+
+.txt-animado span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #3A0CA3;
+  border-left: 3px solid var(--txtdestaque);
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 3px solid var(--swiperbutton);
+  }
+}
+
+@keyframes words {
+  0%,20% {
+    content: "Felipe";
+  }
+  21%,40% {
+    content: "Duarte.";
+  }
+  41%,60% {
+    content: "Felipe";
+  }
+  61%,80% {
+    content: "Duarte.";
+  }
+  81%,100% {
+    content: "Felipe";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
+}
+
 .home h3 {
-  color: #8e94da;
+  color: var(--txtdestaque);
   font-size: 16px;
   margin-right: 35px;
+  text-transform: uppercase;
 }
 
 div#botoes {
