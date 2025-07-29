@@ -153,24 +153,10 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-  #fone {
-    font-size: 30px;
-  }
-
-  .contato h2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-   font-size: 3em;
-    margin-bottom: 1em;
-    color: var(--txtpadrao);
-    padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+ .form {
+  width: 50vw;
 }
 
-.contato p {
-  font-size: 1.5em;
-}
 
   .linha-decorativa {
     height: 4px;
@@ -314,24 +300,10 @@
     width: 150px;
   }
 
-  #fone {
-    font-size: 30px;
-  }
-
-  .contato h2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-   font-size: 3.5em;
-    margin-bottom: 1em;
-    color: var(--txtpadrao);
-    padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+.form {
+  width: 30vw;
 }
 
-.contato p {
-  font-size: 1.5em;
-}
 
   .linha-decorativa {
     height: 6px;
@@ -491,24 +463,10 @@
     width: 150px;
   }
 
-  #fone {
-    font-size: 30px;
-  }
+ 
 
-  .contato h2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-   font-size: 3.5em;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    color: var(--txtpadrao);
-    padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contato p {
-  font-size: 1.5em;
+.form {
+  width: 40vw;
 }
 
   .linha-decorativa {
