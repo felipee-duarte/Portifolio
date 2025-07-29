@@ -17,9 +17,9 @@
   </head>
   <body onresize="mudouTamanho()">
     <!-- HEADER -->
-    <header>
+    <header id="topo">
       <div class="left">
-        <h1>duarte.dev</h1>
+        <img src="assets/logo-dark.png" alt="logo duarte.dev" />
       </div>
 
       <div class="center">
@@ -36,25 +36,24 @@
 
     <menu id="itens">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#projeto">Projetos</a></li>
+        <li><a href="#habilidade">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </menu>
 
     <!-- HOME -->
     <main>
-      <section class="home">
+      <section class="home" id="home">
+        <div class="ancora-ajuste"></div>
         <div id="texto">
-          <h1>HELLO WORLD👋🏼</h1> 
-            <div class="txt-animado">
-              Eu sou <span></span>
-            </div>
+          <h1>HELLO WORLD👋🏼</h1>
+          <div class="txt-animado">Eu sou <span></span></div>
           <h3>desenvolvedor web front-end.</h3>
-          <button id="fale"><p>Fale comigo</p></button>
-          <button id="baixe"><p>Baixe o CV</p></button>
+          <button id="fale"><a href="#formulario">Fale comigo</a></button>
+          <button id="baixe"><a href="#">Baixe o CV</a></button>
         </div>
         <div class="foto">
           <img
@@ -77,8 +76,9 @@
 
       <!-- SOBRE MIM -->
       <section>
-        <div class="sobre">
-          <h2>Sobre mim</h2>
+        <div class="ancora-ajuste"></div>
+        <div class="sobre" id="sobre">
+          <h2 style="margin-top: 0">Sobre mim</h2>
           <p>
             Sou um desenvolvedor web front-end focado em criar interfaces
             modernas, acessíveis e bem estruturadas. Tenho conhecimento em
@@ -98,9 +98,10 @@
 
       <!-- PROJETOS -->
 
-      <section class="projeto">
+      <section class="projeto" id="projeto">
+        <div class="ancora-ajuste"></div>
         <div class="txt-projeto">
-          <h2>Projetos</h2>
+          <h2 style="margin-top: 0">Projetos</h2>
         </div>
         <div class="container swiper">
           <div class="embalagem">
@@ -334,8 +335,11 @@
       </section>
 
       <!-- HABILIDADES -->
-      <section class="habilidade">
-        <h2 class="txthabili">Habilidades e Ferramentas</h2>
+      <section class="habilidade" id="habilidade">
+        <div class="ancora-ajuste"></div>
+        <h2 class="txthabili" style="margin-top: 0">
+          Habilidades e Ferramentas
+        </h2>
         <div class="container-slide">
           <div class="paginas-slide">
             <img src="assets/HTML5.png" alt="logo Html5" />
@@ -368,20 +372,21 @@
       </section>
 
       <!-- CONTATO -->
-      <section class="contato">
-        <div>
-          <h2>Fale comigo!</h2>
-        </div>
-        <div id="txtcontato">
-          <p>
-            <i id="fone" class="ph ph-envelope"></i>felipeds0211@gmail.com
-            <br> 
-            <i id="fone" class="ph ph-device-mobile"></i>+55 19 99646-2753
-          </p> 
-        </div>
-        <div class="linha-decorativa"></div>
+      <section class="contato" id="contato">
+        <form class="form" id="formulario" action="https://formsubmit.co/felipeds0211@gmail.com" method="post">
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+          <div class="title">Contato</div>
+          <input type="email" name="email" placeholder="Seu email" class="input" required/>
+          <textarea name="mensagem" placeholder="Deixe sua mensagem" required></textarea>
+
+          <button type="submit">Envie</button>
+        </form>
       </section>
     </main>
+
+    <div class="linha-decorativa"></div>
 
     <footer>
       <p>
@@ -403,6 +408,15 @@
         <ion-icon name="logo-linkedin"></ion-icon>
       </a>
     </div>
+
+    <button class="button" id="scrollTop">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

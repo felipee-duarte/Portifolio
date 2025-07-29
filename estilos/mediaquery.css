@@ -62,6 +62,10 @@
     color: var(--txtpadrao);
   }
 
+  header img {
+  width: 180px;
+  }
+
   .home {
     padding: 0px 40px;
   }
@@ -132,7 +136,6 @@
  .txt-projeto h2 {
     display: flex;
     font-size: 3em;
-    margin-top: 1.5em;
     margin-bottom: 1em;
     color: var(--txtpadrao);
     text-align: center;
@@ -159,7 +162,6 @@
     justify-content: flex-start;
     align-items: flex-start;
    font-size: 3em;
-    margin-top: 1.5em;
     margin-bottom: 1em;
     color: var(--txtpadrao);
     padding: 10px;
@@ -197,13 +199,20 @@
     background-image: url(../assets/Dark-desktop.png);
   }
 
+   header img {
+  width: 200px;
+  }
+
+  .ancora-ajuste {
+    top: -70px;
+  }
+
   i#burguer {
     display: none;
   }
 
   menu {
-    display: block;
-    text-align: center;
+    background: #3B0DA4;
   }
 
   menu > ul > li {
@@ -229,7 +238,6 @@
 
   #texto h1 {
     font-size: 2em;
-    margin-top: 100px;
   }
 
   #texto h2 {
@@ -257,7 +265,6 @@
     font-size: 3em;
     color: var(--txtpadrao);
     text-align: center;
-    margin-top: 1.5em;
     margin-bottom: 0.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
@@ -274,7 +281,6 @@
   .txt-projeto h2 {
     display: flex;
     font-size: 3em;
-    margin-top: 2em;
     margin-bottom: 1em;
     color: var(--txtpadrao);
     text-align: center;
@@ -285,7 +291,6 @@
   .txthabili {
     display: flex;
     font-size: 3em;
-    margin-top: 2em;
     margin-bottom: 1em;
     color: var(--txtpadrao);
     text-align: center;
@@ -318,7 +323,6 @@
     justify-content: flex-start;
     align-items: flex-start;
    font-size: 3.5em;
-    margin-top: 1.5em;
     margin-bottom: 1em;
     color: var(--txtpadrao);
     padding: 10px;
@@ -356,6 +360,19 @@
     background-image: url(../assets/Dark-desktop.png);
     padding: 30px 30px 30px 30px;
   }
+
+  html {
+    scroll-padding-top: 120px;
+  }
+
+  header img {
+  width: 200px;
+  }
+
+   .ancora-ajuste {
+    top: -65px;
+  }
+
 
   i#burguer {
     display: none;

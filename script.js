@@ -49,3 +49,22 @@ const swiper = new Swiper('.embalagem', {
     }
   }
 });
+
+document.getElementById("scrollTop").addEventListener("click", () => {
+  document.getElementById("topo").scrollIntoView({ behavior: "smooth" });
+})
+
+  const botaoTopo = document.getElementById('scrollTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      botaoTopo.style.display = 'flex'; // ou 'block' se quiser
+    } else {
+      botaoTopo.style.display = 'none';
+    }
+  });
+
+  // Oculta o botão ao carregar a página
+  window.addEventListener('load', () => {
+    botaoTopo.style.display = 'none';
+  });
