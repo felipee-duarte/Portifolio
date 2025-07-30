@@ -1,3 +1,12 @@
+function mudouTamanho() {
+    if (window.innerWidth >= 768) {
+        itens.style.display = 'block'
+    } else{
+        itens.style.display = 'none'
+    }
+}
+
+
 function clickMenu() {
     if (itens.style.display == 'block') {
         itens.style.display = 'none'
@@ -7,12 +16,18 @@ function clickMenu() {
 }
 
 
-function mudouTamanho() {
-    if (window.innerWidth >= 768) {
-        itens.style.display = 'block'
-    } else{
-        itens.style.display = 'none'
-    }
+
+function toggleMode() {
+  const html = document.documentElement
+  const logo = document.getElementById('logo')
+  html.classList.toggle('light')
+
+  
+  if (html.classList.contains('light')) {
+    logo.src = 'assets/logo-light.png'
+  } else {
+    logo.src = 'assets/logo-dark.png'
+  }
 }
 
 
@@ -58,13 +73,13 @@ document.getElementById("scrollTop").addEventListener("click", () => {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
-      botaoTopo.style.display = 'flex'; // ou 'block' se quiser
+      botaoTopo.style.display = 'flex'; 
     } else {
       botaoTopo.style.display = 'none';
     }
   });
 
-  // Oculta o botão ao carregar a página
+  
   window.addEventListener('load', () => {
     botaoTopo.style.display = 'none';
   });

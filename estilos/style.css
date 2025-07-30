@@ -3,45 +3,73 @@
 /*versão mobile first*/
 :root {
   --bg-url: url(../assets/Dark-mobile.png);
-  --fundo: #3a0ca3;
-  --txtpadrao: #ffffff;
-  --txtbotao: #ffffff;
-  --txtdestaque: #b0b3d6;
+  --bg-body: #3a0ca3;
+  --text-default: #ffffff;
+  --text-highlight: #b0b3d6;
+  --bottom-default: #ffffff;
+  --txt-hover: #00000033;
+  --hover: #00000080;
+    
+  --dark: #190447;
+  --accent: #16aeea;
+  --moon-sun: #fff000;
+  
   --menu: #190447;
   --hover-menu: #00000073;
-  --escuro: #190447;
-  --claro: #16aeea;
-  --luaesol: #fff000;
-  --etiqueta: #ffffffe6;
-  --txtetiqueta: #6366f1;
-  --projeto: #b0b3d6;
-  --titulocartao: #000000var(--ti);
-  --bordafooter: #00000030;
+
+  --project: #b0b3d6;
+  --card-hover-bg: #6366f14d;
+  --tag-bg: #ffffffe6;
+  --tag-text: #6366f1;
+  --button-project: #6366f1;
+  --card-title: #000000;
+  --footer-border: #00000030;
   --swiperbullet: #b1b3f8;
   --swiperbutton: #6366f1;
-  --icone: #ffffff;
+  
+  --form: #b0b3d6;
+  --button-form: #6366f1;
+  
+  --anchor-text: #111111;
+  --hover-anchor: #b4a0ff41;
+  --bg-anchor: #b1b3f8;
 }
 
-.light {
+:root.light {
   --bg-url: url(../assets/Light-mobile.png);
-  --fundo: #A1A7F7;
-  --txtpadrao: #000000;
-  --txtbotao: #ffffff;
-  --txtdestaque: #3f51b5;
-  --menu: #fff;
-  --hover-menu: #ffffff85;
-  --escuro: #190447;
-  --claro: #16aeea;
-  --luaesol: #fff000;
-  --etiqueta: #000000b3;
-  --txtetiqueta: #8a8be1;
-  --projeto: #ffffff;
-  --titulocartao: #111111;
-  --bordafooter: #00000030;
+  --bg-body: #A1A7F7;
+  --text-default: #000000;
+  --text-highlight: #3f51b5;
+  --bottom-default: #ffffff;
+  --txt-hover: #00000033;
+  --hover: #00000080;
+    
+  --dark: #190447;
+  --accent: #0091ff;
+  --moon-sun: #fff000;
+  
+  --menu: #926de3;
+  --hover-menu: #00000073;
+
+  --project: #fff;
+  --card-hover-bg: #ffffff4d;
+  --tag-bg: #ffffffe6;
+  --tag-text: #6366f1;
+  --button-project: #6366f1;
+  --card-title: #2b2b2b;
+  --footer-border: #00000030;
   --swiperbullet: #b1b3f8;
   --swiperbutton: #6366f1;
-  --icone: #ffffff;
+  
+  --form: #666fcf;
+  --button-form: #adaef7;
+  
+  --anchor-text: #fff;
+  --hover-anchor: #67589c41;
+  --bg-anchor: #caccfe;
 }
+
+
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +91,7 @@ html {
 body {
   padding: 20px;
   background: var(--bg-url);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   overflow-x: hidden;
@@ -109,6 +138,7 @@ header img {
   margin-left: auto;
 }
 
+/* SWITCH */
 .switch {
   font-size: 17px;
   position: relative;
@@ -131,7 +161,7 @@ header img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--escuro);
+  background-color: var(--dark);
   transition: 0.5s;
   border-radius: 30px;
 }
@@ -144,32 +174,36 @@ header img {
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px var(--luaesol);
-  background: var(--escuro);
+  box-shadow: inset 8px -4px 0px 0px var(--moon-sun);
+  background: var(--dark);
   transition: 0.5s;
 }
 
 input:checked + .slider {
-  background-color: var(--claro);
+  background-color: var(--accent);
 }
 
 input:checked + .slider:before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px var(--luaesol);
+  box-shadow: inset 15px -4px 0px 15px var(--moon-sun);
 }
+
+/* MENU BURGUER */
 
 i#burguer {
   display: inline-block;
   text-align: center;
-  color: var(--txtpadrao);
+  color: var(--text-highlight);
   padding: 10px;
   font-size: 30px;
   cursor: pointer;
 }
 
 i#burguer:hover {
-  color: var(--txtpadrao);
+  color: var(--text-default);
 }
+
+/* MENU */
 
 menu {
   display: none;
@@ -184,17 +218,19 @@ menu > ul > li > a {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  color: var(--txtdestaque);
+  color: var(--text-default);
   background-color: var(--menu);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.407);
+  box-shadow: 0px 5px 10px var(--hover);
 }
 
 menu > ul > li > a:hover {
   background-color: var(--hover-menu);
 }
 
+/* HOME */
+
 .home h1 {
-  color: var(--txtpadrao);
+  color: var(--text-default);
   font-size: 18px;
   font-weight: bold;
   margin-top: 48px;
@@ -209,7 +245,7 @@ menu > ul > li > a:hover {
 }
 
 div.txt-animado {
-  color: var(--txtpadrao);
+  color: var(--text-default);
   font-size: 40px;
   font-weight: bold;
   margin-right: 35px;
@@ -221,7 +257,7 @@ div.txt-animado {
 
 .txt-animado span::before {
   content: "Felipe";
-  color: var(--txtdestaque);
+  color: var(--text-highlight);
   animation: words 20s infinite;
 }
 
@@ -230,8 +266,8 @@ div.txt-animado {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: var(--fundo);
-  border-left: 3px solid var(--txtdestaque);
+  background-color: var(--bg-body);
+  border-left: 3px solid var(--text-highlight);
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
@@ -292,11 +328,13 @@ div.txt-animado {
 }
 
 .home h3 {
-  color: var(--txtdestaque);
+  color: var(--text-highlight);
   font-size: 16px;
   margin-right: 35px;
   text-transform: uppercase;
 }
+
+/* BOTÃO HOME */
 
 div#botoes {
   display: flex;
@@ -313,50 +351,60 @@ div > button {
 }
 
 div #fale{
-  border: 3px solid var(--txtpadrao);
-  background-color: rgba(255, 255, 255, 0);
-  color: var(--txtbotao);
+  border: 3px solid var(--text-default);
+  background-color: transparent;
+  color: var(--text-default);
   font-size: 1em;
   font-weight: normal;
   margin: 10px 10px 30px;
+   transition: all 0.3s ease;
 }
 
 #fale a {
   text-decoration: none;
-  color: var(--txtpadrao);
+  color: var(--text-default);
 }
 
 div #baixe {
-  background: var(--txtdestaque);
-  border: 3px solid var(--txtpadrao);
-  color: var(--txtpadrao);
+  background: var(--text-highlight);
+  border: 3px solid var(--text-default);
+  color: var(--bottom-default);
   font-size: 1em;
   font-weight: normal;
   margin: 10px 10px 30px;
+  transition: all 0.3s ease;
 }
 
 #baixe a {
   text-decoration: none;
-  color: var(--txtbotao);
+  color: var(--txtbotao2);
 }
 
 div #fale:hover {
-  color: var(--titulocartao);
-  background-color: var(--txtdestaque);
-  border: 3px solid var(--titulocartao);
+  transform: translateY(-5px);
+  color: var(--card-title);
+  background-color: var(--text-highlight);
+  border: 3px solid var(--footer-border);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
 }
 
 div #baixe:hover {
-  color: var(--titulocartao);
-  border: 3px solid var(--titulocartao);
+  transform: translateY(-5px);
+  border: 3px solid var(--footer-border);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
 }
+
+/* FOTO */
 
 .foto img {
   display: block;
   margin: auto;
+  width: 280px;
+  height: auto;
   margin-top: 30px;
   margin-bottom: 70px;
 }
+
 
 img#celular {
   display: block;
@@ -368,24 +416,28 @@ img#desktop {
   display: none;
 }
 
+/* SOBRE */
+
 .sobre h2 {
   font-size: 2.5em;
-  color: var(--txtpadrao);
+  color: var(--text-default);
   text-align: center;
   padding: 10px;
   margin-bottom: 1em;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 5px var(--txt-hover);
 }
 
 .sobre p {
   font-size: 1em;
   text-indent: 1em;
-  color: var(--txtpadrao);
+  color: var(--text-default);
   text-align: justify;
   max-width: 500px;
   margin: auto;
   margin-bottom: 5em;
 }
+
+/* PROJETO */
 
 .projeto {
   display: flex;
@@ -399,10 +451,10 @@ img#desktop {
   display: flex;
   font-size: 2.5em;
   margin-bottom: 1em;
-  color: var(--txtpadrao);
+  color: var(--text-default);
   text-align: center;
   padding: 5px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 5px var(--txt-hover);
 }
 
 .embalagem {
@@ -416,14 +468,15 @@ img#desktop {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: var(--projeto);
+  background: var(--project);
   border-radius: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 10px var(--txt-hover);
   transition: transform 0.3s ease;
 }
 
 .embalagem .cartao:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
 }
 
 .cartao .img-cartao {
@@ -445,11 +498,11 @@ img#desktop {
   border-radius: 30px;
   font-weight: 600;
   font-size: 0.75em;
-  color: var(--txtetiqueta);
+  color: var(--tag-text);
   padding: 5px 15px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background: var(--etiqueta);
+  background: var(--tag-bg);
 }
 
 .cartao .conteudo-cartao {
@@ -460,7 +513,7 @@ img#desktop {
 }
 
 .cartao .conteudo-cartao .titulo-cartao {
-  color: var(--titulocartao);
+  color: var(--card-title);
   font-size: 1.25em;
   font-weight: 700;
   line-height: 1.3;
@@ -468,7 +521,7 @@ img#desktop {
 }
 
 .cartao .conteudo-cartao .texto-cartao {
-  color: var(--txtpadrao);
+  color: var(--text-default);
   font-size: 0.95em;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -480,7 +533,7 @@ img#desktop {
   justify-content: space-between;
   padding-top: 15px;
   margin-top: auto;
-  border-top: 1px solid var(--bordafooter);
+  border-top: 1px solid var(--footer-border);
 }
 
 .cartao .footer-cartao .projeto-cartao {
@@ -494,8 +547,8 @@ img#desktop {
   margin-right: 10px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid var(--etiqueta);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--tag-bg);
+  box-shadow: 0 2px 5px var(--hover);
 }
 
 .cartao .projeto-cartao .info-projeto {
@@ -506,29 +559,29 @@ img#desktop {
 .cartao .projeto-cartao .nome-perfil {
   font-size: 0.85em;
   font-weight: 600;
-  color: var(--titulocartao);
+  color: var(--card-title);
 }
 
 .cartao .projeto-cartao .local-projeto {
   font-size: 0.8em;
-  color: var(--titulocartao);
+  color: var(--card-title);
 }
 
 .cartao .footer-cartao .botao-cartao {
-  color: var(--txtpadrao);
+  color: var(--text-default);
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 0.9em;
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(135deg, var(--txtetiqueta), var(--claro) 100%);
-  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.2);
+  background: var(--button-project);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
   transition: all 0.3s ease;
 }
 
 .cartao .footer-cartao .botao-cartao:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
 }
 
 .embalagem .swiper-pagination-bullet {
@@ -580,6 +633,8 @@ img#desktop {
   color: var(--swiperbutton);
 }
 
+/* HABILIDADES */
+
 .habilidade {
   min-height: 100vh;
   display: flex;
@@ -593,18 +648,18 @@ img#desktop {
   font-size: 2.5em;
   margin-top: 1.5em;
   margin-bottom: 1em;
-  color: var(--txtpadrao);
+  color: var(--text-default);
   text-align: center;
   padding: 5px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 5px var(--txt-hover);
 }
 
 .container-slide {
   width: 95vw;
-  background-color: var(--txtdestaque);
+  background-color: var(--text-highlight);
   overflow: hidden;
   padding: 20px 0;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 15px var(--hover);
 }
 
 .paginas-slide {
@@ -618,7 +673,7 @@ img#desktop {
   height: auto;
   margin: 0 20px;
   object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 10px var(--hover));
 }
 
 @keyframes scroll {
@@ -630,6 +685,8 @@ img#desktop {
   }
 }
 
+/* CONTATO */
+
 .form {
   position: relative;
   display: flex;
@@ -638,14 +695,20 @@ img#desktop {
   flex-direction: column;
   gap: 30px;
   width: 90vw;
-  background-color: var(--txtdestaque);
+  background-color: var(--form);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  box-shadow: 0 30px 30px -30px var(--hover);
+  transition: all 0.3s ease;
+}
+
+.form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
 }
 
 .form .title {
-  color: var(--txtpadrao);
+  color: var(--text-default);
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -657,7 +720,7 @@ img#desktop {
 
 .form input {
   outline: 0;
-  border: 1px solid var(--titulocartao);
+  border: 1px solid var(--card-title);
   padding: 8px 14px;
   border-radius: 8px;
   width: 100%;
@@ -671,7 +734,7 @@ img#desktop {
   resize: none;
   outline: 0;
   padding: 8px 14px;
-  border: 1px solid var(--titulocartao);
+  border: 1px solid var(--card-title);
 }
 
 .form button {
@@ -682,15 +745,23 @@ img#desktop {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  background-color: var(--txtetiqueta);
-  color: var(--txtpadrao);
+  background-color: var(--button-form);
+  color: var(--text-default);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px var(--card-hover-bg);
+}
+
+/* LINHA DECORATIVA */
 
 .linha-decorativa {
   width: 80vw;
   height: 2px;
-  background: var(--txtpadrao);
+  background: var(--text-default);
   margin: 50px auto 50px;
   position: relative;
 }
@@ -700,7 +771,7 @@ img#desktop {
   content: "";
   width: 6px;
   height: 6px;
-  background-color: var(--txtpadrao);
+  background-color: var(--text-default);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -715,24 +786,28 @@ img#desktop {
   right: 0;
 }
 
+/* FOOTER */
+
 footer {
   text-align: center;
   margin-bottom: 35px;
-  color: var(--txtdestaque);
+  color: var(--text-highlight);
   font-size: 12px;
 }
+
+/* BOTÃO ANCORA */
 
 .button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--titulocartao);
+  background-color: var(--anchor-text);
   border: none;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  box-shadow: 0px 0px 0px 4px var(--hover-anchor);
   cursor: pointer;
   transition-duration: 0.3s;
   overflow: hidden;
@@ -748,14 +823,14 @@ footer {
 }
 
 .svgIcon path {
-  fill: var(--icone);
+  fill: var(--text-default);
 }
 
 .button:hover {
   width: 140px;
   border-radius: 50px;
   transition-duration: 0.3s;
-  background-color: var(--swiperbullet);
+  background-color: var(--bg-anchor);
   align-items: center;
 }
 
@@ -769,7 +844,7 @@ footer {
   position: absolute;
   bottom: -20px;
   content: "voltar ao topo";
-  color: var(--txtpadrao);
+  color: var(--text-default);
   
   font-size: 0px;
 }
@@ -781,6 +856,8 @@ footer {
   
   transition-duration: 0.3s;
 }
+
+/* SOCIAL LINKS */
 
 .social-links {
   display: flex;
@@ -797,5 +874,5 @@ footer {
   padding: 16px;
   transition: 0.2s;
   border-radius: 50%;
-  color: var(--txtdestaque);
+  color: var(--text-highlight);
 }

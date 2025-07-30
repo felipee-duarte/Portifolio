@@ -10,24 +10,26 @@
 
 */
 
-:root {
-  --txtpadrao: #ffffff;
-  --txtdestaque: #b0b3d6;
-  --escuro: #190447;
-  --claro: #16aeea;
-  --luaesol: #fff000;
-  --etiqueta: #ffffffe6;
-  --txtetiqueta: #6366f1;
-  --titulocartao: #111111;
-  --bordafooter: #00000030;
-  --swiperbullet: #b1b3f8;
-  --swiperbutton: #6366f1;
-}
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /*TABLET*/
+  :root {
+    --bg-url: url(../assets/Dark-tablet.png);
+    --bg-body: #10032e;
+    --text-highlight: #b0b3d6;
+  }
+
+  :root.light {
+    --bg-url: url(../assets/Light-tablet.png);
+    --bg-body: #dfe1fd;
+     --text-highlight: #3f51b5;
+  }
   body {
-    background-image: url(../assets/Dark-tablet.png);
+    background-image: var(--bg-url);
+  }
+
+  .foto img {
+    width: 350px;
+    height: auto;
   }
 
   .input {
@@ -59,11 +61,11 @@
 
   menu > ul > li > a:hover {
     background-color: transparent;
-    color: var(--txtpadrao);
+    color: var(--text-highlight);
   }
 
   header img {
-  width: 180px;
+    width: 180px;
   }
 
   .home {
@@ -71,7 +73,7 @@
   }
 
   .txt-animado span::after {
-    background-color: #120432;
+    background-color: var(--bg-body);
   }
 
   #texto h1 {
@@ -117,56 +119,55 @@
 
   .sobre h2 {
     font-size: 3em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 10px;
     margin-bottom: 0.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .sobre p {
     font-size: 1.5em;
     text-indent: 1.5em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: justify;
     max-width: 700px;
     margin: auto;
   }
 
- .txt-projeto h2 {
+  .txt-projeto h2 {
     display: flex;
     font-size: 3em;
     margin-bottom: 1em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .txthabili {
     display: flex;
     font-size: 3em;
     margin-bottom: 1em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 5px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
- .form {
-  width: 50vw;
-}
-
+  .form {
+    width: 50vw;
+  }
 
   .linha-decorativa {
     height: 4px;
   }
 
   .linha-decorativa::before,
-.linha-decorativa::after {
-  width: 8px;
-  height: 8px;
-}
+  .linha-decorativa::after {
+    width: 8px;
+    height: 8px;
+  }
 
   img#celular {
     display: none;
@@ -181,12 +182,28 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   /*DESKTOP*/
-  body {
-    background-image: url(../assets/Dark-desktop.png);
+  :root {
+    --bg-url: url(../assets/Dark-desktop.png);
+    --bg-body: #3a0ca3;
+    --text-highlight: #b0b3d6;
   }
 
-   header img {
-  width: 200px;
+  :root.light {
+    --bg-url: url(../assets/Light-desktop.png);
+    --bg-body: #9aa1f6;
+     --text-highlight: #3f51b5;
+  }
+  body {
+    background-image: var(--bg-url);
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  .foto img {
+    width: 400px;
+    height: auto;
   }
 
   .ancora-ajuste {
@@ -198,7 +215,7 @@
   }
 
   menu {
-    background: #3B0DA4;
+    background: transparent;
   }
 
   menu > ul > li {
@@ -213,7 +230,7 @@
 
   menu > ul > li > a:hover {
     background-color: transparent;
-    color: var(--txtpadrao);
+    color: var(--text-highlight);
   }
 
   .home {
@@ -249,16 +266,16 @@
 
   .sobre h2 {
     font-size: 3em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     margin-bottom: 0.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .sobre p {
     font-size: 1.5em;
     text-indent: 2em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: justify;
     max-width: 800px;
     margin: auto;
@@ -268,20 +285,20 @@
     display: flex;
     font-size: 3em;
     margin-bottom: 1em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .txthabili {
     display: flex;
     font-size: 3em;
     margin-bottom: 1em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .embalagem {
@@ -300,20 +317,19 @@
     width: 150px;
   }
 
-.form {
-  width: 30vw;
-}
-
+  .form {
+    width: 30vw;
+  }
 
   .linha-decorativa {
     height: 6px;
   }
 
   .linha-decorativa::before,
-.linha-decorativa::after {
-  width: 15px;
-  height: 15px;
-}
+  .linha-decorativa::after {
+    width: 15px;
+    height: 15px;
+  }
 
   img#celular {
     display: none;
@@ -328,8 +344,19 @@
 
 @media screen and (min-width: 1200px) {
   /*TELAS GRANDES*/
+  :root {
+    --bg-url: url(../assets/Dark-desktop.png);
+    --bg-body: #3a0ca3;
+    --text-highlight: #b0b3d6;
+  }
+
+  :root.light {
+    --bg-url: url(../assets/Light-desktop.png);
+    --bg-body: #9aa1f6;
+     --text-highlight: #3f51b5;
+  }
   body {
-    background-image: url(../assets/Dark-desktop.png);
+    background-image: var(--bg-url);
     padding: 30px 30px 30px 30px;
   }
 
@@ -338,13 +365,17 @@
   }
 
   header img {
-  width: 200px;
+    width: 200px;
   }
 
-   .ancora-ajuste {
+  .foto img {
+    width: 400px;
+    height: auto;
+  }
+
+  .ancora-ajuste {
     top: -65px;
   }
-
 
   i#burguer {
     display: none;
@@ -353,6 +384,7 @@
   menu {
     display: block;
     text-align: center;
+    background: transparent;
   }
 
   menu > ul > li {
@@ -367,7 +399,7 @@
 
   menu > ul > li > a:hover {
     background-color: transparent;
-    color: var(--txtpadrao);
+    color: var(--text-highlight);
   }
 
   .home {
@@ -409,17 +441,17 @@
 
   .sobre h2 {
     font-size: 3.5em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .sobre p {
     font-size: 1.5em;
     text-indent: 2em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: justify;
     max-width: 900px;
     margin: auto;
@@ -430,10 +462,10 @@
     font-size: 3em;
     margin-top: 3em;
     margin-bottom: 1em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .txthabili {
@@ -441,10 +473,10 @@
     font-size: 3em;
     margin-top: 1.5em;
     margin-bottom: 1em;
-    color: var(--txtpadrao);
+    color: var(--text-default);
     text-align: center;
     padding: 5px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px var(--txt-hover);
   }
 
   .embalagem {
@@ -463,22 +495,19 @@
     width: 150px;
   }
 
- 
-
-.form {
-  width: 40vw;
-}
+  .form {
+    width: 40vw;
+  }
 
   .linha-decorativa {
     height: 6px;
   }
 
   .linha-decorativa::before,
-.linha-decorativa::after {
-  width: 15px;
-  height: 15px;
-}
-
+  .linha-decorativa::after {
+    width: 15px;
+    height: 15px;
+  }
 
   img#celular {
     display: none;
