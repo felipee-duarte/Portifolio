@@ -2,33 +2,45 @@
 
 /*versão mobile first*/
 :root {
+  --bg-url: url(../assets/Dark-mobile.png);
   --fundo: #3a0ca3;
   --txtpadrao: #ffffff;
+  --txtbotao: #ffffff;
   --txtdestaque: #b0b3d6;
+  --menu: #190447;
+  --hover-menu: #00000073;
   --escuro: #190447;
   --claro: #16aeea;
   --luaesol: #fff000;
   --etiqueta: #ffffffe6;
   --txtetiqueta: #6366f1;
-  --titulocartao: #111111;
+  --projeto: #b0b3d6;
+  --titulocartao: #000000var(--ti);
   --bordafooter: #00000030;
   --swiperbullet: #b1b3f8;
   --swiperbutton: #6366f1;
+  --icone: #ffffff;
 }
 
-:light {
-  --fundo: #9AA1F6;
+.light {
+  --bg-url: url(../assets/Light-mobile.png);
+  --fundo: #A1A7F7;
   --txtpadrao: #000000;
-  --txtdestaque: #3F51B5;
+  --txtbotao: #ffffff;
+  --txtdestaque: #3f51b5;
+  --menu: #fff;
+  --hover-menu: #ffffff85;
   --escuro: #190447;
   --claro: #16aeea;
   --luaesol: #fff000;
   --etiqueta: #000000b3;
-  --txtetiqueta: #6366f1;
+  --txtetiqueta: #8a8be1;
+  --projeto: #ffffff;
   --titulocartao: #111111;
   --bordafooter: #00000030;
   --swiperbullet: #b1b3f8;
   --swiperbutton: #6366f1;
+  --icone: #ffffff;
 }
 * {
   margin: 0;
@@ -50,7 +62,7 @@ html {
 
 body {
   padding: 20px;
-  background: url(../assets/Dark-mobile.png);
+  background: var(--bg-url);
   background-size: cover;
   background-position: center center;
   overflow-x: hidden;
@@ -95,12 +107,6 @@ header img {
 .right {
   justify-content: flex-end; /* Coloca o switch à direita */
   margin-left: auto;
-}
-
-header h1 {
-  text-align: start;
-  font-size: 1.5rem;
-  color: var(--txtdestaque);
 }
 
 .switch {
@@ -155,7 +161,7 @@ input:checked + .slider:before {
 i#burguer {
   display: inline-block;
   text-align: center;
-  color: var(--txtdestaque);
+  color: var(--txtpadrao);
   padding: 10px;
   font-size: 30px;
   cursor: pointer;
@@ -179,12 +185,12 @@ menu > ul > li > a {
   padding: 10px;
   text-decoration: none;
   color: var(--txtdestaque);
-  background-color: var(--escuro);
+  background-color: var(--menu);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.407);
 }
 
 menu > ul > li > a:hover {
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: var(--hover-menu);
 }
 
 .home h1 {
@@ -309,7 +315,7 @@ div > button {
 div #fale{
   border: 3px solid var(--txtpadrao);
   background-color: rgba(255, 255, 255, 0);
-  color: var(--txtpadrao);
+  color: var(--txtbotao);
   font-size: 1em;
   font-weight: normal;
   margin: 10px 10px 30px;
@@ -331,18 +337,18 @@ div #baixe {
 
 #baixe a {
   text-decoration: none;
-  color: var(--txtpadrao);
+  color: var(--txtbotao);
 }
 
 div #fale:hover {
-  color: black;
+  color: var(--titulocartao);
   background-color: var(--txtdestaque);
-  border: 3px solid black;
+  border: 3px solid var(--titulocartao);
 }
 
 div #baixe:hover {
-  color: black;
-  border: 3px solid black;
+  color: var(--titulocartao);
+  border: 3px solid var(--titulocartao);
 }
 
 .foto img {
@@ -410,7 +416,7 @@ img#desktop {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: var(--txtdestaque);
+  background: var(--projeto);
   border-radius: 20px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
@@ -742,7 +748,7 @@ footer {
 }
 
 .svgIcon path {
-  fill: var(--txtpadrao);
+  fill: var(--icone);
 }
 
 .button:hover {

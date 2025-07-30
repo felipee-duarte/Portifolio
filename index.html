@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,11 +15,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body onresize="mudouTamanho()" class="dark">
+  <body onresize="mudouTamanho()" class="" >
     <!-- HEADER -->
     <header id="topo">
       <div class="left">
-        <img src="assets/logo-dark.png" alt="logo duarte.dev" />
+        <img src="assets/logo-dark.png" alt="logo duarte.dev" id="logo"/>
       </div>
 
       <div class="center">
@@ -27,7 +27,7 @@
       </div>
 
       <div class="right">
-        <label class="switch" id="toggleTheme">
+        <label class="switch" id="toggleTheme" onclick="toggleMode()">
           <input type="checkbox" />
           <span class="slider"></span>
         </label>
