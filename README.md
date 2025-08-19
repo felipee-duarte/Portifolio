@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Um agregador de links para usar como um cartão de visitas online.
+Meu site portifólio 100% responsivo com modo escuro e claro, nele inclui um carrossel com meus projetos e um carrossel infinito com minhas habilidades e ferramentas.
 
 - [Acesse o projeto finalizado, online](https://felipee-duarte.github.io/Portifolio/)
 
