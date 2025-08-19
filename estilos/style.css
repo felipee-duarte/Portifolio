@@ -134,7 +134,7 @@ header img {
 }
 
 .right {
-  justify-content: flex-end; /* Coloca o switch à direita */
+  justify-content: flex-end;
   margin-left: auto;
 }
 
