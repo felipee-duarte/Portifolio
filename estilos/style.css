@@ -754,8 +754,9 @@ img#desktop {
 .form button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 15px var(--card-hover-bg);
-}
-
+} 
+ 
+  
 /* LINHA DECORATIVA */
 
 .linha-decorativa {

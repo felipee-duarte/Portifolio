@@ -83,3 +83,30 @@ document.getElementById("scrollTop").addEventListener("click", () => {
   window.addEventListener('load', () => {
     botaoTopo.style.display = 'none';
   });
+
+  const form = document.getElementById("formulario");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("http://localhost:3000/enviar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("Mensagem enviada com sucesso!");
+        form.reset();
+      } else {
+        alert("Erro ao enviar mensagem, tente novamente.");
+      }
+    } catch (error) {
+      alert("Falha na conexão com o servidor.");
+      console.error(error);
+    }
+  });
