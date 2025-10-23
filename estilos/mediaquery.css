@@ -439,6 +439,11 @@
     margin-top: 60px;
   }
 
+  .sobre {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
   .sobre h2 {
     font-size: 3.5em;
     color: var(--text-default);
@@ -455,6 +460,11 @@
     text-align: justify;
     max-width: 900px;
     margin: auto;
+  }
+
+  .projeto {
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .txt-projeto h2 {
@@ -491,12 +501,19 @@
     display: flex;
   }
 
+  .habilidade {
+     margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
   .paginas-slide img {
     width: 150px;
   }
 
   .form {
     width: 40vw;
+     margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .linha-decorativa {

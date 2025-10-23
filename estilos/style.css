@@ -402,7 +402,7 @@ div #baixe:hover {
   width: 280px;
   height: auto;
   margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 
@@ -417,7 +417,9 @@ img#desktop {
 }
 
 /* SOBRE */
-
+.sobre {
+  margin-bottom: 100px;
+}
 .sobre h2 {
   font-size: 2.5em;
   color: var(--text-default);
@@ -434,7 +436,7 @@ img#desktop {
   text-align: justify;
   max-width: 500px;
   margin: auto;
-  margin-bottom: 5em;
+  margin-bottom: 20px;
 }
 
 /* PROJETO */
@@ -444,13 +446,14 @@ img#desktop {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100%;
+  margin-bottom: 100px;
 }
 
 .txt-projeto h2 {
   display: flex;
   font-size: 2.5em;
-  margin-bottom: 1em;
+  margin-bottom: 20px;
   color: var(--text-default);
   text-align: center;
   padding: 5px;
@@ -458,6 +461,7 @@ img#desktop {
 }
 
 .embalagem {
+  
   max-width: 80vw;
   padding: 20px 10px;
   margin: 0 10px 25px;
@@ -636,11 +640,12 @@ img#desktop {
 /* HABILIDADES */
 
 .habilidade {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .txthabili {
