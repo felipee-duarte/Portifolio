@@ -453,15 +453,19 @@ img#desktop {
 .txt-projeto h2 {
   display: flex;
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 90px;
   color: var(--text-default);
   text-align: center;
   padding: 5px;
   text-shadow: 2px 2px 5px var(--txt-hover);
 }
 
+.container {
+  transform: translateY(-80px);
+}
+
 .embalagem {
-  
+  flex-direction: column;
   max-width: 80vw;
   padding: 20px 10px;
   margin: 0 10px 25px;
