@@ -21,7 +21,7 @@
   :root.light {
     --bg-url: url(../assets/Light-tablet.png);
     --bg-body: #dfe1fd;
-     --text-highlight: #3f51b5;
+    --text-highlight: #3f51b5;
   }
   body {
     background-image: var(--bg-url);
@@ -191,7 +191,7 @@
   :root.light {
     --bg-url: url(../assets/Light-desktop.png);
     --bg-body: #9aa1f6;
-     --text-highlight: #3f51b5;
+    --text-highlight: #3f51b5;
   }
   body {
     background-image: var(--bg-url);
@@ -353,7 +353,7 @@
   :root.light {
     --bg-url: url(../assets/Light-desktop.png);
     --bg-body: #9aa1f6;
-     --text-highlight: #3f51b5;
+    --text-highlight: #3f51b5;
   }
   body {
     background-image: var(--bg-url);
@@ -502,7 +502,7 @@
   }
 
   .habilidade {
-     margin-top: 150px;
+    margin-top: 150px;
     margin-bottom: 150px;
   }
 
@@ -512,7 +512,7 @@
 
   .form {
     width: 40vw;
-     margin-top: 150px;
+    margin-top: 150px;
     margin-bottom: 150px;
   }
 
