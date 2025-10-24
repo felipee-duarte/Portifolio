@@ -417,9 +417,7 @@ img#desktop {
 }
 
 /* SOBRE */
-.sobre {
-  margin-bottom: 100px;
-}
+
 .sobre h2 {
   font-size: 2.5em;
   color: var(--text-default);
@@ -696,7 +694,7 @@ img#desktop {
 
 /* CONTATO */
 
-.form {
+/*.form {
   position: relative;
   display: flex;
   align-items: center;
@@ -763,7 +761,92 @@ img#desktop {
 .form button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 15px var(--card-hover-bg);
-} 
+}*/
+
+.form {
+  width: 350px;
+  height: 510px;
+  background: var(--form);
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.form:hover {
+  transform: translateY(-4px);
+  box-shadow: 3px 3px 10px var(--card-hover-bg);
+}
+
+.form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-default);
+  text-shadow: 3px 3px 10px var(--hover);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid var(--card-title);
+  background-color: var(--text-default);
+  color: var(--hover);
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.form-group select {
+  text-align: center;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--hover);
+  font-weight: bold;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--footer-border);
+  background-color: var(--form);
+  color: var(--text-default);
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  border: 3px solid var(--button-form);
+  background-color: var(--button-form);
+  color: var(--text-default);
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  transition: 0.3s;
+  box-shadow: 3px 3px 3px var(--hover);
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 3px var(--hover);
+  transform: translateY(-2px);
+}
  
   
 /* LINHA DECORATIVA */
