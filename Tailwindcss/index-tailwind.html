@@ -24,21 +24,21 @@
   </head>
   <body
     onresize="mudouTamanho()"
-    class="min-h-screen bg-cover bg-center bg-[url('../assets/Dark-mobile.png')] sm:bg-[url('../assets/Dark-tablet.png')] lg:bg-[url('../assets/Dark-desktop.png')] xl:bg-[url('../assets/Dark-desktop.png')] transition-colors duration-500 max-w-[100vw]"
+    class="min-h-screen bg-cover bg-center bg-[url('../assets/Dark-mobile.png')] sm:bg-[url('../assets/Dark-tablet.png')] lg:bg-[url('../assets/Dark-desktop.png')] xl:bg-[url('../assets/Dark-desktop.png')] transition-colors duration-500 max-w-[100vw] overflow-x-hidden p-5 text-white"
   >
     <!-- HEADER -->
-    <header id="topo">
-      <div class="left">
-        <img src="assets/logo-dark.png" alt="logo duarte.dev" id="logo" />
+    <header id="topo" class="flex items-center justify-between ">
+      <div class="flex items-center">
+        <img class="w-[160px] h-auto" src="../assets/logo-dark.png" alt="logo duarte.dev" id="logo" />
       </div>
 
-      <div class="center">
+      <div class="flex items-center justify-center mr-auto">
         <i id="burguer" class="ph ph-list" onclick="clickMenu()"></i>
       </div>
 
-      <div class="right">
-        <label class="switch" id="toggleTheme">
-          <input type="checkbox" onclick="toggleMode()" />
+      <div class="flex items-center justify-end ml-auto">
+        <label class="text-[17px] relative inline-block m-auto w-[3.5em] h-[2em]" id="toggleTheme">
+          <input class="opacity-0 w-0 h-0" type="checkbox" onclick="toggleMode()" />
           <span class="slider"></span>
         </label>
       </div>
@@ -56,8 +56,8 @@
 
     <!-- HOME -->
     <main>
-      <section class="home" id="home">
-        <div class="ancora-ajuste"></div>
+      <section class="mt-[100px] scroll-mt-[100px]" >
+        <div class="relative h-0 top-[-70px]"></div>
         <div id="texto">
           <h1>HELLO WORLD👋🏼</h1>
           <div class="txt-animado">Eu sou <span></span></div>
@@ -68,17 +68,17 @@
         <div class="foto">
           <img
             id="celular"
-            src="assets/foto-p.png"
+            src="../assets/foto-p.png"
             alt="Foto do Felipe Duarte"
           />
           <img
             id="tablet"
-            src="assets/foto-m.png"
+            src="../assets/foto-m.png"
             alt="Foto do Felipe Duarte"
           />
           <img
             id="desktop"
-            src="assets/foto-g.png"
+            src="../assets/foto-g.png"
             alt="Foto do Felipe Duarte"
           />
         </div>
