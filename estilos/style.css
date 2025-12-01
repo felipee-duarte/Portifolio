@@ -694,75 +694,6 @@ img#desktop {
 
 /* CONTATO */
 
-/*.form {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: auto;
-  flex-direction: column;
-  gap: 30px;
-  width: 90vw;
-  background-color: var(--form);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 30px 30px -30px var(--hover);
-  transition: all 0.3s ease;
-}
-
-.form:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px var(--card-hover-bg);
-}
-
-.form .title {
-  color: var(--text-default);
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.form input {
-  outline: 0;
-  border: 1px solid var(--card-title);
-  padding: 8px 14px;
-  border-radius: 8px;
-  width: 100%;
-  height: 50px;
-}
-
-.form textarea {
-  border-radius: 8px;
-  height: 100px;
-  width: 100%;
-  resize: none;
-  outline: 0;
-  padding: 8px 14px;
-  border: 1px solid var(--card-title);
-}
-
-.form button {
-  align-self: flex-end;
-  padding: 8px;
-  outline: 0;
-  border: 0;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: var(--button-form);
-  color: var(--text-default);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.form button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px var(--card-hover-bg);
-}*/
-
 .form {
   width: 350px;
   height: 510px;
@@ -821,7 +752,7 @@ img#desktop {
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--footer-border);
-  background-color: var(--form);
+  background-color: var(--tag-bg);
   color: var(--text-default);
 }
 
