@@ -752,7 +752,7 @@ img#desktop {
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--footer-border);
-  background-color: var(--tag-bg);
+  background-color: var(--swiperbutton);
   color: var(--text-default);
 }
 
