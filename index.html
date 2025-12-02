@@ -23,6 +23,17 @@
   <body onresize="mudouTamanho()">
     <!-- HEADER -->
     <header id="topo">
+      <div id="manutencao-overlay">
+        <div id="manutencao-popup">
+          <h3>⚠️ Site em manutenção</h3>
+          <p>
+            Algumas funções podem não estar funcionando corretamente.<br />
+            Para qualquer dúvida, entre em contato pelas redes sociais.
+          </p>
+          <button onclick="fecharPopup()">Entendi</button>
+        </div>
+      </div>
+
       <div class="left">
         <img src="assets/logo-dark.png" alt="logo duarte.dev" id="logo" />
       </div>
@@ -86,15 +97,26 @@
           <h2>Sobre mim</h2>
           <p id="sobre">
             Sou estudante de Bacharelado em Ciência da Computação e apaixonado
-            por tecnologia — especialmente pelo desenvolvimento web. Tenho
-            experiência com <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript (ES6+)</strong>, <strong>React</strong>, <strong>TailwindCSS</strong>,
-            <strong>Bootstrap</strong>, <strong>Node.js</strong>, <strong>Firebase</strong> e <strong>WordPress</strong>, e atualmente estou
-            ampliando meus conhecimentos em <strong>PHP</strong> para evoluir ainda mais no
-            desenvolvimento full stack.<br> Meu objetivo a curto prazo é atuar
-            como <strong>Desenvolvedor Front-End Júnior</strong>, mas tenho como meta crescer
-            profissionalmente até me tornar um <strong>Desenvolvedor Full Stack</strong>. Sou uma
-            pessoa comunicativa, adaptável e proativa, que busca aprender
-            constantemente e entregar resultados de qualidade
+            por tecnologia, tanto no desenvolvimento web quanto nas diversas
+            áreas de TI. Tenho experiência com <strong>HTML5</strong>,
+            <strong>CSS3</strong>, <strong>JavaScript (ES6+)</strong>,
+            <strong>React</strong>, <strong>TailwindCSS</strong>,
+            <strong>Bootstrap</strong>, <strong>Node.js</strong>,
+            <strong>Firebase</strong> e <strong>WordPress</strong>, além de
+            estar ampliando meus conhecimentos em <strong>Python</strong> e
+            fundamentos de infraestrutura e suporte técnico. Possuo interesse e
+            vivência em temas como montagem e manutenção de computadores, redes,
+            sistemas operacionais, boas práticas de segurança e suporte ao
+            usuário, o que complementa minha formação como profissional de TI.
+            Meu objetivo a curto prazo é atuar como
+            <strong>Desenvolvedor Front-End Júnior</strong> ou em áreas iniciais
+            de <strong>Tecnologia da Informação</strong>, unindo
+            desenvolvimento, suporte e infraestrutura. A longo prazo, busco
+            evoluir para me tornar um
+            <strong>Desenvolvedor Full Stack</strong> e ampliar cada vez mais
+            minhas competências dentro do universo tecnológico. Sou
+            comunicativo, adaptável e proativo, sempre em busca de aprender
+            continuamente e entregar resultados de qualidade.
           </p>
         </div>
       </section>
@@ -118,9 +140,14 @@
                   <p class="etiqueta-cartao">Dev Barber</p>
                 </div>
                 <div class="conteudo-cartao">
-                  <h3 class="titulo-cartao">Sistema de agendamento automático para barbearia.</h3>
+                  <h3 class="titulo-cartao">
+                    Sistema de agendamento automático para barbearia.
+                  </h3>
                   <p class="texto-cartao">
-                    O sistema faz integração direta com APIs do Google, utilizando o Google Sheets para salvar os agendamentos e o Google Calendar para controle dos horários — tudo de forma automatizada.
+                    O sistema faz integração direta com APIs do Google,
+                    utilizando o Google Sheets para salvar os agendamentos e o
+                    Google Calendar para controle dos horários — tudo de forma
+                    automatizada.
                   </p>
                   <div class="footer-cartao">
                     <div class="projeto-cartao">
@@ -153,7 +180,10 @@
                     online.
                   </h3>
                   <p class="texto-cartao">
-                    Um agregador de links responsivo e minimalista para centralizar meus principais contatos e redes sociais em um só lugar. O site foi projetado com foco em ser ideal para uso em perfis de redes sociais.
+                    Um agregador de links responsivo e minimalista para
+                    centralizar meus principais contatos e redes sociais em um
+                    só lugar. O site foi projetado com foco em ser ideal para
+                    uso em perfis de redes sociais.
                   </p>
                   <div class="footer-cartao">
                     <div class="projeto-cartao">
@@ -181,9 +211,12 @@
                   <p class="etiqueta-cartao">CM BEAUTY</p>
                 </div>
                 <div class="conteudo-cartao">
-                  <h3 class="titulo-cartao">Cm Beauty (e-commerce de cosméticos)</h3>
+                  <h3 class="titulo-cartao">
+                    Cm Beauty (e-commerce de cosméticos)
+                  </h3>
                   <p class="texto-cartao">
-                    Landing page desenvolvida para uma loja de cosméticos e perfumes, com foco em conversão e destaque de promoções.
+                    Landing page desenvolvida para uma loja de cosméticos e
+                    perfumes, com foco em conversão e destaque de promoções.
                   </p>
                   <div class="footer-cartao">
                     <div class="projeto-cartao">
@@ -211,11 +244,11 @@
                   <p class="etiqueta-cartao">Mineradora</p>
                 </div>
                 <div class="conteudo-cartao">
-                  <h3 class="titulo-cartao">
-                    Mineradora de Água
-                  </h3>
+                  <h3 class="titulo-cartao">Mineradora de Água</h3>
                   <p class="texto-cartao">
-                    Site institucional desenvolvido para uma mineradora de água, com foco em apresentar a empresa, seus produtos e compromisso com a sustentabilidade.
+                    Site institucional desenvolvido para uma mineradora de água,
+                    com foco em apresentar a empresa, seus produtos e
+                    compromisso com a sustentabilidade.
                   </p>
                   <div class="footer-cartao">
                     <div class="projeto-cartao">
@@ -272,7 +305,11 @@
                 <div class="conteudo-cartao">
                   <h3 class="titulo-cartao">Meu portifólio</h3>
                   <p class="texto-cartao">
-                    Desenvolvi meu portfólio pessoal para apresentar meus projetos, habilidades e experiências na área de desenvolvimento web. O site foi planejado com foco em design limpo,servindo como vitrine profissional e central de contato para oportunidades.
+                    Desenvolvi meu portfólio pessoal para apresentar meus
+                    projetos, habilidades e experiências na área de
+                    desenvolvimento web. O site foi planejado com foco em design
+                    limpo,servindo como vitrine profissional e central de
+                    contato para oportunidades.
                   </p>
                   <div class="footer-cartao">
                     <div class="projeto-cartao">
@@ -299,7 +336,9 @@
                 <div class="conteudo-cartao">
                   <h3 class="titulo-cartao">Dev Barber com Dashboard</h3>
                   <p class="texto-cartao">
-                    Sistema completo para gestão de barbearia, com agendamento, controle financeiro e relatórios. Ultiliza React no front-end, Node.js e Firebase no back-end.
+                    Sistema completo para gestão de barbearia, com agendamento,
+                    controle financeiro e relatórios. Ultiliza React no
+                    front-end, Node.js e Firebase no back-end.
                   </p>
                   <div class="footer-cartao">
                     <div class="projeto-cartao">
@@ -376,10 +415,14 @@
               alt="logo do Firebase"
             />
             <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="logo do Python"
+            />
+
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
               alt="logo do Git"
             />
-
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
               alt="logo Html5"
@@ -416,6 +459,10 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
               alt="logo do Firebase"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="logo do Python"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
@@ -471,8 +518,6 @@
 
         <p id="resposta"></p>
       </section>
-
-      
     </main>
 
     <div class="linha-decorativa"></div>
@@ -505,42 +550,6 @@
         ></path>
       </svg>
     </button>
-
-    <script>
-  const form = document.getElementById("formulario");
-  const resposta = document.getElementById("resposta");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const dados = {
-      nome: document.getElementById("nome").value,
-      email: document.getElementById("email").value,
-      opcao: document.getElementById("tipo").value,
-      mensagem: document.getElementById("mensagem").value,
-    };
-
-    try {
-      const retorno = await fetch("https://duartedev.dev/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dados),
-      });
-
-      const resultado = await retorno.json();
-
-      resposta.innerText = resultado.message;
-      resposta.style.color = "green";
-
-      form.reset();
-
-    } catch (error) {
-      resposta.innerText = "Erro ao enviar mensagem";
-      resposta.style.color = "red";
-    }
-  });
-</script>
-
 
     <script
       type="module"

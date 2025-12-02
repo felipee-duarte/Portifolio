@@ -1,3 +1,11 @@
+window.onload = function () {
+  document.getElementById("manutencao-overlay").classList.add("ativo");
+}
+
+function fecharPopup() {
+  document.getElementById("manutencao-overlay").classList.remove("ativo");
+}
+
 function mudouTamanho() {
     if (window.innerWidth >= 768) {
         itens.style.display = 'block'
@@ -93,7 +101,7 @@ document.getElementById("scrollTop").addEventListener("click", () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("http://localhost:3000/enviar", {
+      const response = await fetch("https://duartedev.dev/enviar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
